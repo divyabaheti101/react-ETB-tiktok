@@ -1,7 +1,7 @@
 import './Videos.css';
 import React, { useRef, useState } from 'react';
 
-function Video() {
+function Video({channel, description, likes, shares, messages, url}) {
     const [playing, setPlaying] = useState(true)
     const videoRef = useRef(null)
     //useRef doesn't re renders the component if it's poitning value changes, not the case with useState

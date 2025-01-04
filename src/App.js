@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import videoMetadata from './metadata/videos.json'
+import Video from './components/videos';
 
 function App() {
   const videos = videoMetadata
@@ -11,7 +11,7 @@ function App() {
       <div className='container'>
         {videos.map((video, index) => {
           return (
-            <Video key={index} channel = {video.channel} url={video.url} song={video.song} description={video.description}
+            <Video channel = {video.channel} url={video.url} song={video.song} description={video.description}
             likes={video.likes} messages={video.messages} shares={video.shares} /> 
           )
         })}
