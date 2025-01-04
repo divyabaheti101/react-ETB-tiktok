@@ -1,0 +1,20 @@
+[
+    {
+        "url": "./videos/sample_video1.mp4",
+        "channel": "EatTheBlocks",
+        "description": "Description something 1",
+        "song": "song 1 name",
+        "likes": 5124,
+        "messages": 98,
+        "shares": 48
+    },
+    {
+        "url": "./videos/sample_video2.mp4",
+        "channel": "SOmeOther",
+        "description": "Description something 2 fakes",
+        "song": "another song 2 name",
+        "likes": 4789,
+        "messages": 98,
+        "shares": 48
+    }
+]
