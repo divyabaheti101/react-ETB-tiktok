@@ -1,12 +1,17 @@
-import { Favorite, Message, MusicNote, Share } from '@mui/icons-material';
+import { Favorite, FavoriteBorder, Message, MusicNote, Share } from '@mui/icons-material';
 import './VideoSidebar.css'
-import React from 'react';
+import React, { useState } from 'react';
 
 function VideoSidebar({messages, shares, likes}){
+    const [liked, setLiked] = useState(false)
     return (
         <div className='videoSidebar'>
             <div className='videoSidebar_button'>
-                <Favorite fontSize='large' />
+                {liked ? 
+                    (<Favorite fontSize='large' onClick={(e) => setLiked(false)} />)
+                : (<FavoriteBorder fontSize='large' onClick={(e) => setLiked(true)} />)    
+            }
+                
                 <p>{likes}</p>
             </div>
             <div className='videoSidebar_button'>
